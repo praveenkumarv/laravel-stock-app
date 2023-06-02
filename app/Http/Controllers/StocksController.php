@@ -44,7 +44,7 @@ class StocksController extends Controller
         $endDate = $request->input('end_date');
         $email = $request->input('email');
 
-        $apiKey = '225d9e6ea2mshc6b75d2651f8504p1670dfjsn93cb338a4cf1';
+        $apiKey = $_ENV['RAPID_API_KEY'];
 
         $client = new Client(['verify' => false]);
         
